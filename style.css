@@ -1,0 +1,235 @@
+/* ===================================================== */
+/* RESET E CONFIGURAÇÕES GLOBAIS */
+/* ===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    min-height: 100%;
+}
+
+body {
+    background: linear-gradient(135deg, #050816, #111827);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* ===================================================== */
+/* TIPOGRAFIA */
+/* ===================================================== */
+
+h1, h2, h3, h4, h5, .navbar-brand {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+p, li {
+    color: #d1d5db;
+    line-height: 1.7;
+}
+
+/* ===================================================== */
+/* NAVBAR (EFEITO GLASSMORPHISM) */
+/* ===================================================== */
+
+.navbar {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background: rgba(0, 0, 0, 0.75) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 15px 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05);
+    color: #ffd000 !important;
+}
+
+.nav-link {
+    position: relative;
+    transition: 0.3s;
+    color: white !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #ffb800 !important;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: #ffb800;
+    transition: 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* ===================================================== */
+/* HERO SECTION */
+/* ===================================================== */
+
+.bg-secondary {
+    background: 
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.85)),
+        radial-gradient(circle at top, #1f2937, #050816) !important;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 20px !important;
+}
+
+.display-3 {
+    font-size: clamp(2rem, 5vw, 4rem); /* Tamanho responsivo automático */
+    text-shadow: 0 0 20px rgba(255, 184, 0, 0.15);
+}
+
+/* ===================================================== */
+/* BOTÕES */
+/* ===================================================== */
+
+.btn {
+    border-radius: 12px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: bold;
+}
+
+.btn-warning {
+    background: linear-gradient(45deg, #ffb800, #ff8800);
+    border: none;
+    color: black !important;
+    padding: 12px 25px;
+}
+
+.btn-warning:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(255, 184, 0, 0.4);
+}
+
+/* ===================================================== */
+/* CARDS E IMAGENS */
+/* ===================================================== */
+
+.card {
+    border-radius: 22px;
+    overflow: hidden;
+    transition: 0.4s ease;
+    background: rgba(17, 24, 39, 0.9) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    backdrop-filter: blur(10px);
+}
+
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.6);
+}
+
+.card img {
+    height: 260px;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+
+.card:hover img {
+    transform: scale(1.08);
+}
+
+/* Classe específica para zoom em imagens soltas */
+.hover-image {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    display: inline-block; /* Garante que o transform funcione bem */
+}
+
+.hover-image:hover {
+    transform: scale(1.03);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+/* ===================================================== */
+/* FORMULÁRIOS E MODAL */
+/* ===================================================== */
+
+.modal-content {
+    border-radius: 20px;
+    background: rgba(10, 10, 10, 0.98) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.form-control {
+    background: #111827 !important;
+    border: 1px solid #374151;
+    color: white !important;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.form-control:focus {
+    background: #1f2937 !important;
+    border-color: #ffb800;
+    box-shadow: 0 0 0 0.25rem rgba(255, 184, 0, 0.2);
+}
+
+/* ===================================================== */
+/* ANIMAÇÕES */
+/* ===================================================== */
+
+.fade-in-up {
+    animation: fadeUp 0.8s ease backwards;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplicando a animação */
+.card, .navbar, .alert {
+    animation: fadeUp 0.8s ease backwards;
+}
+
+/* ===================================================== */
+/* RESPONSIVIDADE */
+/* ===================================================== */
+
+@media (max-width: 992px) {
+    .bg-secondary { min-height: 50vh; }
+    .card img { height: 220px; }
+}
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        background: rgba(0, 0, 0, 0.9);
+        padding: 20px;
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+    
+    .btn-mobile-full { /* Use essa classe se quiser botão full width */
+        width: 100%;
+    }
+}
