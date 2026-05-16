@@ -3,40 +3,26 @@
 
 <head>
 
-  <!-- ===================================================== -->
   <!-- META TAGS -->
-  <!-- ===================================================== -->
-
   <meta charset="UTF-8">
 
-  <!-- 🔥 RESPONSIVIDADE -->
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
 
-  <!-- 🔥 SEO -->
   <meta name="description"
         content="GameBoum - Notícias, reviews e análises do mundo gamer.">
 
   <title>GameBoum - Início</title>
 
-  <!-- ===================================================== -->
   <!-- BOOTSTRAP -->
-  <!-- ===================================================== -->
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         rel="stylesheet">
 
-  <!-- ===================================================== -->
-  <!-- CSS PERSONALIZADO -->
-  <!-- ===================================================== -->
-
+  <!-- CSS -->
   <link rel="stylesheet"
-        href="style.css">
+        href="./style.css">
 
-  <!-- ===================================================== -->
-  <!-- FONTE -->
-  <!-- ===================================================== -->
-
+  <!-- FONTES -->
   <link rel="preconnect"
         href="https://fonts.googleapis.com">
 
@@ -49,62 +35,38 @@
 
 </head>
 
-<!-- ===================================================== -->
-<!-- BODY -->
-<!-- ===================================================== -->
-
 <body class="bg-dark text-light">
 
-<!-- ===================================================== -->
 <!-- NAVBAR -->
-<!-- ===================================================== -->
 
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-lg">
 
   <div class="container">
 
-    <!-- ===================================================== -->
     <!-- LOGO -->
-    <!-- 🔥 CORRIGIDO:
-         href estava causando erro antes
-    -->
-    <!-- ===================================================== -->
 
     <a class="navbar-brand fw-bold text-warning fs-3"
-       href="index.html">
+       href="./index.html">
 
-       🎮 GAME BOUM
+      🎮 GAME BOUM
 
     </a>
 
-    <!-- ===================================================== -->
     <!-- BOTÃO MOBILE -->
-    <!-- 🔥 MELHORADO:
-         acessibilidade + mobile
-    -->
-    <!-- ===================================================== -->
 
     <button class="navbar-toggler"
-
             type="button"
-
             data-bs-toggle="collapse"
-
             data-bs-target="#menuTopo"
-
             aria-controls="menuTopo"
-
             aria-expanded="false"
-
             aria-label="Abrir Menu">
 
       <span class="navbar-toggler-icon"></span>
 
     </button>
 
-    <!-- ===================================================== -->
     <!-- MENU -->
-    <!-- ===================================================== -->
 
     <div class="collapse navbar-collapse justify-content-end"
          id="menuTopo">
@@ -114,9 +76,9 @@
         <li class="nav-item">
 
           <a class="nav-link active"
-             href="index.html">
+             href="./index.html">
 
-             INÍCIO
+            INÍCIO
 
           </a>
 
@@ -125,9 +87,9 @@
         <li class="nav-item">
 
           <a class="nav-link"
-             href="jogos.html">
+             href="./jogos.html">
 
-             JOGOS
+            JOGOS
 
           </a>
 
@@ -135,19 +97,12 @@
 
         <li class="nav-item">
 
-          <!-- 🔥 CORRIGIDO:
-               evita bug/subida da página
-          -->
-
           <a class="nav-link"
-
              href="javascript:void(0)"
-
              data-bs-toggle="modal"
-
              data-bs-target="#modalContato">
 
-             CONTATO
+            CONTATO
 
           </a>
 
@@ -161,12 +116,7 @@
 
 </nav>
 
-<!-- ===================================================== -->
-<!-- HERO SECTION -->
-<!-- 🔥 CORRIGIDO:
-     classe hero-section adicionada
--->
-<!-- ===================================================== -->
+<!-- HERO -->
 
 <section class="hero-section text-center d-flex align-items-center fade-up">
 
@@ -184,12 +134,10 @@
 
     </p>
 
-    <!-- 🔥 BOTÃO COM SCROLL SUAVE -->
-
     <a href="#analises"
        class="btn btn-warning btn-lg mt-3">
 
-       Ver análises
+      Ver análises
 
     </a>
 
@@ -197,21 +145,13 @@
 
 </section>
 
-<!-- ===================================================== -->
 <!-- MAIN -->
-<!-- ===================================================== -->
 
 <main class="container my-5 fade-up">
 
-  <!-- ===================================================== -->
   <!-- SOBRE -->
-  <!-- ===================================================== -->
 
   <section class="row align-items-center g-5">
-
-    <!-- ===================================================== -->
-    <!-- TEXTO -->
-    <!-- ===================================================== -->
 
     <div class="col-lg-6">
 
@@ -233,8 +173,6 @@
 
       </p>
 
-      <!-- 🔥 ALERT MODERNO -->
-
       <div class="alert mt-4">
 
         ⚠ Aprenda análise crítica de jogos aqui.
@@ -243,17 +181,9 @@
 
     </div>
 
-    <!-- ===================================================== -->
     <!-- IMAGEM -->
-    <!-- 🔥 RESPONSIVA
-    -->
-    <!-- ===================================================== -->
 
     <div class="col-lg-6 text-center">
-
-      <!-- 🔥 DICA:
-           depois baixe o gif e coloque na pasta imagens
-      -->
 
       <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTF5bXJzZXp5YTJ3cm4yY2t4dDMwNnFqYzRtaHdpNjF6NWlrNnY1aCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/d9QiBcfzg64Io/giphy.webp"
 
@@ -265,9 +195,7 @@
 
   </section>
 
-  <!-- ===================================================== -->
   <!-- ANÁLISES -->
-  <!-- ===================================================== -->
 
   <section class="mt-5"
            id="analises">
@@ -278,31 +206,17 @@
 
     </h2>
 
-    <!-- ===================================================== -->
-    <!-- GRID RESPONSIVO -->
-    <!-- 🔥 MOBILE / TABLET / DESKTOP
-    -->
-    <!-- ===================================================== -->
-
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 
-      <!-- ===================================================== -->
       <!-- CARD 1 -->
-      <!-- ===================================================== -->
 
       <div class="col">
 
         <div class="card h-100 text-light shadow">
 
-          <img src="imagens/image_ellie.png"
-
+          <img src="./imagens/image_ellie.png"
                class="card-img-top"
-
                alt="The Last of Us">
-
-          <!-- 🔥 FLEX:
-               mantém todos cards alinhados
-          -->
 
           <div class="card-body d-flex flex-column">
 
@@ -312,20 +226,16 @@
 
             </h5>
 
-            <!-- 🔥 FLEX-GROW:
-                 empurra botão para baixo
-            -->
-
             <p class="card-text flex-grow-1">
 
               Uma narrativa intensa sobre vingança e emoção.
 
             </p>
 
-            <a href="The_Last_of_Us_page.html"
+            <a href="./the_last_of_us_page.html"
                class="btn btn-warning w-100">
 
-               Ver Review
+              Ver Review
 
             </a>
 
@@ -335,18 +245,14 @@
 
       </div>
 
-      <!-- ===================================================== -->
       <!-- CARD 2 -->
-      <!-- ===================================================== -->
 
       <div class="col">
 
         <div class="card h-100 text-light shadow">
 
-          <img src="imagens/image_resident.png"
-
+          <img src="./imagens/image_resident.png"
                class="card-img-top"
-
                alt="Resident Evil 2">
 
           <div class="card-body d-flex flex-column">
@@ -363,14 +269,10 @@
 
             </p>
 
-            <!-- 🔥 CORRIGIDO:
-                 link funcionando corretamente
-            -->
-
-            <a href="resident_evil.html"
+            <a href="./resident_evil.html"
                class="btn btn-warning w-100">
 
-               Ver Review
+              Ver Review
 
             </a>
 
@@ -380,18 +282,14 @@
 
       </div>
 
-      <!-- ===================================================== -->
       <!-- CARD 3 -->
-      <!-- ===================================================== -->
 
       <div class="col">
 
         <div class="card h-100 text-light shadow">
 
-          <img src="imagens/image_battle.png"
-
+          <img src="./imagens/image_battle.png"
                class="card-img-top"
-
                alt="Battlefield 1">
 
           <div class="card-body d-flex flex-column">
@@ -408,14 +306,10 @@
 
             </p>
 
-            <!-- 🔥 CORRIGIDO:
-                 removeu ../ quebrado
-            -->
-
-            <a href="battlefield.html"
+            <a href="./battlefield.html"
                class="btn btn-warning w-100">
 
-               Ver Review
+              Ver Review
 
             </a>
 
@@ -427,16 +321,14 @@
 
     </div>
 
-    <!-- ===================================================== -->
     <!-- BOTÃO CATÁLOGO -->
-    <!-- ===================================================== -->
 
     <div class="text-center mt-5">
 
-      <a href="jogos.html"
+      <a href="./jogos.html"
          class="btn btn-outline-warning btn-lg">
 
-         Ir para catálogo completo
+        Ir para catálogo completo
 
       </a>
 
@@ -446,9 +338,7 @@
 
 </main>
 
-<!-- ===================================================== -->
 <!-- FOOTER -->
-<!-- ===================================================== -->
 
 <footer class="bg-black text-center text-light py-4 mt-5">
 
@@ -460,12 +350,7 @@
 
 </footer>
 
-<!-- ===================================================== -->
 <!-- MODAL -->
-<!-- 🔥 CORRIGIDO:
-     modal dark moderno
--->
-<!-- ===================================================== -->
 
 <div class="modal fade"
      id="modalContato">
@@ -473,10 +358,6 @@
   <div class="modal-dialog modal-dialog-centered">
 
     <div class="modal-content bg-dark border-warning text-light">
-
-      <!-- ===================================================== -->
-      <!-- HEADER -->
-      <!-- ===================================================== -->
 
       <div class="modal-header">
 
@@ -487,44 +368,27 @@
         </h5>
 
         <button type="button"
-
                 class="btn-close btn-close-white"
-
                 data-bs-dismiss="modal">
 
         </button>
 
       </div>
 
-      <!-- ===================================================== -->
-      <!-- BODY -->
-      <!-- ===================================================== -->
-
       <div class="modal-body">
 
         <form>
 
           <input class="form-control mb-3"
-
                  placeholder="Seu Nome">
 
           <input class="form-control mb-3"
-
                  type="email"
-
                  placeholder="Seu Email">
 
           <textarea class="form-control mb-3"
-
                     rows="4"
-
-                    placeholder="Digite sua mensagem">
-
-          </textarea>
-
-          <!-- ===================================================== -->
-          <!-- BOTÃO -->
-          <!-- ===================================================== -->
+                    placeholder="Digite sua mensagem"></textarea>
 
           <button class="btn btn-warning w-100">
 
@@ -542,9 +406,7 @@
 
 </div>
 
-<!-- ===================================================== -->
 <!-- BOOTSTRAP JS -->
-<!-- ===================================================== -->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 

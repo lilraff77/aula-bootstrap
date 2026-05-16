@@ -4,11 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <meta name="description" content="Review completo de Battlefield 1 no GameBoum">
   <title>Battlefield 1 | GameBoum</title>
 
   <!-- BOOTSTRAP -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 
   <!-- FONTE GAMER -->
@@ -19,68 +21,117 @@
 
 <body class="bg-dark text-light">
 
-  <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-lg">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-lg bg-dark">
     <div class="container">
-      <a href="index.html" class="navbar-brand text-warning fw-bold fs-4">🎮 GAME BOUM</a>
-      <div class="collapse navbar-collapse justify-content-end">
+
+      <a href="index.html" class="navbar-brand text-warning fw-bold fs-4">
+        🎮 GAME BOUM
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuTopo"
+        aria-controls="menuTopo" aria-expanded="false" aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="menuTopo">
         <ul class="navbar-nav gap-2">
-          <li class="nav-item"><a href="index.html" class="nav-link">INÍCIO</a></li>
-          <li class="nav-item"><a href="jogos.html" class="nav-link active">JOGOS</a></li>
+
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">INÍCIO</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              CATÁLOGO
+            </a>
+          </li>
+
         </ul>
       </div>
+
     </div>
   </nav>
 
+  <!-- HEADER -->
   <header class="bg-secondary text-center py-5">
     <div class="container">
       <h1 class="display-3 fw-bold text-warning">Battlefield 1</h1>
-      <p class="lead mt-3">A brutalidade e a escala mundial da Primeira Guerra Mundial.</p>
+      <p class="lead mt-3">
+        A brutalidade e a escala mundial da Primeira Guerra Mundial.
+      </p>
     </div>
   </header>
 
+  <!-- CONTEÚDO -->
   <main class="container py-5">
+
     <div class="row g-5 align-items-center">
+
+      <!-- IMAGEM -->
       <div class="col-lg-6">
-        <!-- 🔥 ADICIONADO: classe hover-image para o efeito de zoom suave -->
-        <img src="imagens/image_battle.png" class="img-fluid rounded-4 shadow-lg w-100 hover-image" alt="Battlefield 1">
+        <img src="imagens/image_battle.png"
+          class="img-fluid rounded-4 shadow-lg w-100 hover-image"
+          alt="Battlefield 1">
       </div>
 
+      <!-- TEXTO -->
       <div class="col-lg-6">
+
         <div class="card p-4 text-light bg-secondary border-0 shadow">
+
           <h3 class="text-warning mb-3">⚔️ Experiência</h3>
-          <p>Battlefield 1 leva os jogadores para o coração da Grande Guerra, com ambientes destrutíveis e batalhas massivas de até 64 jogadores.</p>
+          <p>
+            Battlefield 1 leva os jogadores para o coração da Grande Guerra,
+            com ambientes destrutíveis e batalhas massivas de até 64 jogadores.
+          </p>
 
           <h3 class="text-warning mt-4 mb-3">🎯 Destaques</h3>
+
           <ul class="list-group list-group-flush">
-            <li class="list-group-item bg-transparent text-light border-secondary">Operações — Batalhas sequenciais em vários mapas.</li>
-            <li class="list-group-item bg-transparent text-light border-secondary">Behemoths — Veículos gigantes como dirigíveis e trens blindados.</li>
-            <li class="list-group-item bg-transparent text-light border-secondary">Visual — Gráficos cinematográficos e som imersivo.</li>
+            <li class="list-group-item bg-transparent text-light border-secondary">
+              Operações — Batalhas sequenciais em vários mapas.
+            </li>
+            <li class="list-group-item bg-transparent text-light border-secondary">
+              Behemoths — Veículos gigantes como dirigíveis e trens blindados.
+            </li>
+            <li class="list-group-item bg-transparent text-light border-secondary">
+              Visual — Gráficos cinematográficos e som imersivo.
+            </li>
           </ul>
 
-          <!-- NOTA FINAL -->
+          <!-- NOTA -->
           <div class="alert alert-warning mt-4 text-center text-dark fw-bold">
             ⭐ Nota Final: 9.0 / 10
           </div>
 
-          <!-- 🔥 BOTÕES PADRONIZADOS: d-grid gap-2 para ficarem um abaixo do outro -->
+          <!-- BOTÕES -->
           <div class="d-grid gap-2 mt-3">
-            <a href="jogos.html" class="btn btn-warning fw-bold py-2">
-               Voltar ao Catálogo
-            </a>
+
             <a href="index.html" class="btn btn-warning fw-bold py-2">
-               Página Inicial
+              Voltar ao Catálogo
             </a>
+
+            <a href="index.html" class="btn btn-outline-warning fw-bold py-2">
+              Página Inicial
+            </a>
+
           </div>
-          
+
         </div>
+
       </div>
+
     </div>
+
   </main>
 
+  <!-- FOOTER -->
   <footer class="bg-black text-center py-4 mt-5">
-    <p>© GameBoum - Battlefield Review</p>
+    <p class="mb-0">© GameBoum - Battlefield Review</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

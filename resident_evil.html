@@ -4,12 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <meta name="description" content="Review completo de Resident Evil 2 Remake no GameBoum">
   <title>Resident Evil 2 Remake | GameBoum</title>
 
   <!-- BOOTSTRAP -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- CSS -->
+
   <link rel="stylesheet" href="style.css">
 
   <!-- GOOGLE FONTS -->
@@ -20,69 +21,128 @@
 
 <body class="bg-dark text-light">
 
-  <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-lg">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-lg bg-dark">
     <div class="container">
-      <a href="index.html" class="navbar-brand text-warning fw-bold fs-4">🎮 GAME BOUM</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuTopo" aria-controls="menuTopo" aria-expanded="false" aria-label="Abrir menu">
+
+      <a href="index.html" class="navbar-brand text-warning fw-bold fs-4">
+        🎮 GAME BOUM
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuTopo"
+        aria-controls="menuTopo" aria-expanded="false" aria-label="Abrir menu">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse justify-content-end" id="menuTopo">
         <ul class="navbar-nav gap-2">
-          <li class="nav-item"><a href="index.html" class="nav-link">INÍCIO</a></li>
-          <li class="nav-item"><a href="index.html" class="nav-link active">JOGOS</a></li>
+
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">INÍCIO</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              CATÁLOGO
+            </a>
+          </li>
+
         </ul>
       </div>
+
     </div>
   </nav>
 
-  <section class="bg-secondary text-center d-flex align-items-center py-5">
+  <!-- HEADER -->
+  <header class="bg-secondary text-center py-5">
     <div class="container">
-      <h1 class="display-3 fw-bold text-warning">Resident Evil 2 Remake</h1>
-      <p class="lead mt-3">O renascimento brutal de um dos maiores clássicos do survival horror.</p>
-    </div>
-  </section>
+      <h1 class="display-3 fw-bold text-warning">
+        Resident Evil 2 Remake
+      </h1>
 
+      <p class="lead mt-3">
+        O renascimento brutal de um dos maiores clássicos do survival horror.
+      </p>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO -->
   <main class="container py-5">
+
     <div class="row g-5 align-items-center">
+
+      <!-- IMAGEM -->
       <div class="col-lg-6">
-        <!-- 🔥 ADICIONADO: classe hover-image para a animação de zoom -->
-        <img src="imagens/image_resident.png" class="img-fluid rounded-4 shadow-lg w-100 hover-image" alt="Resident Evil 2 Remake">
+        <img src="imagens/image_resident.png"
+          class="img-fluid rounded-4 shadow-lg w-100 hover-image"
+          alt="Resident Evil 2 Remake">
       </div>
 
+      <!-- TEXTO -->
       <div class="col-lg-6">
+
         <div class="card p-4 text-light h-100 bg-secondary border-0 shadow">
+
           <h3 class="text-warning mb-3">🧟 Enredo</h3>
-          <p>Raccoon City mergulha no caos após um surto viral criado pela Umbrella Corporation. Leon Kennedy e Claire Redfield lutam para sobreviver enquanto descobrem os horrores escondidos na cidade.</p>
+          <p>
+            Raccoon City mergulha no caos após um surto viral criado pela Umbrella Corporation.
+            Leon Kennedy e Claire Redfield lutam para sobreviver enquanto descobrem os horrores da cidade.
+          </p>
 
           <h3 class="text-warning mt-4 mb-3">👤 Personagens</h3>
+
           <ul class="list-group list-group-flush">
-            <li class="list-group-item bg-transparent text-light border-secondary">Leon S. Kennedy — policial iniciante tentando sobreviver ao caos.</li>
-            <li class="list-group-item bg-transparent text-light border-secondary">Claire Redfield — determinada a encontrar seu irmão Chris.</li>
-            <li class="list-group-item bg-transparent text-light border-secondary">Mr. X — perseguidor implacável que transforma tensão em puro desespero.</li>
+            <li class="list-group-item bg-transparent text-light border-secondary">
+              Leon S. Kennedy — policial iniciante tentando sobreviver ao caos.
+            </li>
+
+            <li class="list-group-item bg-transparent text-light border-secondary">
+              Claire Redfield — determinada a encontrar seu irmão Chris.
+            </li>
+
+            <li class="list-group-item bg-transparent text-light border-secondary">
+              Mr. X — perseguidor implacável que transforma tensão em puro desespero.
+            </li>
           </ul>
 
           <h3 class="text-warning mt-4 mb-3">🎮 Gameplay</h3>
-          <p>O jogo mistura exploração, puzzles inteligentes e gerenciamento limitado de recursos. Cada corredor parece respirar perigo. ☣️</p>
+          <p>
+            O jogo mistura exploração, puzzles inteligentes e gerenciamento limitado de recursos.
+            Cada corredor parece respirar perigo. ☣️
+          </p>
 
+          <!-- NOTA -->
           <div class="alert alert-warning mt-4 text-center text-dark fw-bold">
             ⭐ Nota Final: 9.5 / 10
           </div>
 
-          <!-- 🔥 BOTÕES PADRONIZADOS: d-grid gap-2 para ficarem um abaixo do outro -->
+          <!-- BOTÕES -->
           <div class="d-grid gap-2 mt-3">
-            <a href="index.html" class="btn btn-warning py-2 fw-bold">Voltar ao Catálogo</a>
-            <a href="index.html" class="btn btn-warning py-2 fw-bold">Página Inicial</a>
+
+            <a href="index.html" class="btn btn-warning fw-bold py-2">
+              Voltar ao Catálogo
+            </a>
+
+            <a href="index.html" class="btn btn-outline-warning fw-bold py-2">
+              Página Inicial
+            </a>
+
           </div>
+
         </div>
+
       </div>
+
     </div>
+
   </main>
 
+  <!-- FOOTER -->
   <footer class="bg-black text-center text-light py-4 mt-5">
     <p class="mb-0">© GameBoum - Resident Evil Review</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
 
+</body>
 </html>

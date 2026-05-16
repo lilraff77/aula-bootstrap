@@ -26,19 +26,25 @@ body {
 /* TIPOGRAFIA */
 /* ===================================================== */
 
-h1, h2, h3, h4, h5, .navbar-brand {
+h1,
+h2,
+h3,
+h4,
+h5,
+.navbar-brand {
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 1px;
     font-weight: 700;
 }
 
-p, li {
+p,
+li {
     color: #d1d5db;
     line-height: 1.7;
 }
 
 /* ===================================================== */
-/* NAVBAR (EFEITO GLASSMORPHISM) */
+/* NAVBAR */
 /* ===================================================== */
 
 .navbar {
@@ -48,6 +54,10 @@ p, li {
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     padding: 15px 0;
     transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    transition: 0.3s ease;
 }
 
 .navbar-brand:hover {
@@ -87,9 +97,10 @@ p, li {
 /* ===================================================== */
 
 .bg-secondary {
-    background: 
-        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.85)),
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.85)),
         radial-gradient(circle at top, #1f2937, #050816) !important;
+
     min-height: 70vh;
     display: flex;
     align-items: center;
@@ -98,7 +109,7 @@ p, li {
 }
 
 .display-3 {
-    font-size: clamp(2rem, 5vw, 4rem); /* Tamanho responsivo automático */
+    font-size: clamp(2rem, 5vw, 4rem);
     text-shadow: 0 0 20px rgba(255, 184, 0, 0.15);
 }
 
@@ -125,7 +136,7 @@ p, li {
 }
 
 /* ===================================================== */
-/* CARDS E IMAGENS */
+/* CARDS */
 /* ===================================================== */
 
 .card {
@@ -139,8 +150,12 @@ p, li {
 
 .card:hover {
     transform: translateY(-12px);
-    box-shadow: 0 20px 45px rgba(0,0,0,0.6);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6);
 }
+
+/* ===================================================== */
+/* IMAGENS */
+/* ===================================================== */
 
 .card img {
     height: 260px;
@@ -153,19 +168,21 @@ p, li {
     transform: scale(1.08);
 }
 
-/* Classe específica para zoom em imagens soltas */
 .hover-image {
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-    display: inline-block; /* Garante que o transform funcione bem */
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+
+    display: inline-block;
 }
 
 .hover-image:hover {
     transform: scale(1.03);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
 
 /* ===================================================== */
-/* FORMULÁRIOS E MODAL */
+/* FORMULÁRIOS */
 /* ===================================================== */
 
 .modal-content {
@@ -201,14 +218,16 @@ p, li {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-/* Aplicando a animação */
-.card, .navbar, .alert {
+.card,
+.navbar,
+.alert {
     animation: fadeUp 0.8s ease backwards;
 }
 
@@ -217,19 +236,26 @@ p, li {
 /* ===================================================== */
 
 @media (max-width: 992px) {
-    .bg-secondary { min-height: 50vh; }
-    .card img { height: 220px; }
+
+    .bg-secondary {
+        min-height: 50vh;
+    }
+
+    .card img {
+        height: 220px;
+    }
 }
 
 @media (max-width: 768px) {
+
     .navbar-collapse {
         background: rgba(0, 0, 0, 0.9);
         padding: 20px;
         border-radius: 15px;
         margin-top: 10px;
     }
-    
-    .btn-mobile-full { /* Use essa classe se quiser botão full width */
+
+    .btn-mobile-full {
         width: 100%;
     }
 }
